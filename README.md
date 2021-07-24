@@ -1,6 +1,6 @@
 ## Create a CI/CD Pipeline (comprising of AWS Code* tools) for Amazon Managed Workflow for Apache Airflow (MWAA) using AWS CloudFormation.
 
-This repository contains a AWS CloudFormation template that automates the creation of a AWS CodeCommit Repository and AWS CodePipeline pipeline that would be used to do CI/CD to an S3 Bucket that would be used as the source for an Amazon Managed Workflow for Apache Airflow environment(MWAA). \ Follow the blogpost to get step by step guideline on creating a resources.
+This repository contains a AWS CloudFormation template that automates the creation of a AWS CodeCommit Repository and AWS CodePipeline pipeline that would be used to do CI/CD to an S3 Bucket that would be used as the source for an Amazon Managed Workflow for Apache Airflow environment(MWAA). <br /> Follow the blogpost to get step by step guideline on creating a resources.
 
 ![Architecture, mwaa-cicd-architecture](/mwaa-cicd.png)
 
