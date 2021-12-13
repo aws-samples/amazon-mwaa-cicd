@@ -59,6 +59,25 @@ Resources:
                   - codepipeline.amazonaws.com
                   - cloudformation.amazonaws.com
                   - codecommit.amazonaws.com
+            - Action:
+              - s3:*
+              Effect: Deny
+              Principal: '*'
+              Resource: 
+                - !Join
+                    - ''
+                    - - 'arn:aws:s3:::'
+                      - !Ref PipeilineArtifactStoreBucket
+                      - /*
+                - !Join
+                    - ''
+                    - - 'arn:aws:s3:::'
+                      - !Ref PipeilineArtifactStoreBucket
+                      - ''
+              Condition:
+                Bool:
+                    aws:SecureTransport: 'false'
+              
     CodePipeline:
         Type: AWS::CodePipeline::Pipeline
         Properties:
